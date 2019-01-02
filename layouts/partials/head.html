@@ -32,10 +32,33 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
+  <!-- Privacy notice -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#252e39"
+      },
+      "button": {
+        "background": "#14a7d0"
+      }
+    },
+    "theme": "classic",
+    "position": "bottom-right",
+    "content": {
+      "message": "This blog utilizes several third party online services that might collect your personal information. By continuing visiting this blog, you acknowledge that you agree to the site's",
+      "link": "Privacy Policy",
+      "href": "https://www.freeprivacypolicy.com/privacy/view/ab62d5c1e1c9678b2ac0ff1b22197195"
+    }
+  })});
+  </script>
   <!-- MathJax -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
- <!-- RSS -->
+  <!-- RSS -->
   {{ if .RSSLink }}
   <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .RSSLink }}" />
   {{ end }}
