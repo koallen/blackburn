@@ -1,5 +1,9 @@
 .header {
-  font-family: "Raleway", Helvetica, Arial, sans-serif
+  font-family: "Cuprum", Helvetica, Arial, sans-serif
+}
+
+.content {
+  font-family: "Nunito", sans-serif
 }
 
 a {
@@ -55,7 +59,7 @@ article > footer {
 }
 
 #menu .brand {
-  font-family: Raleway;
+  font-family: Cuprum;
   font-weight: bold;
   font-size: 1em;
   letter-spacing: 0.1em;
