@@ -19,6 +19,7 @@ a:visited {
 }
 
 .small-print {
+  color: #777;
   font-size: 0.8em;
   margin: 0.6em;
 }
