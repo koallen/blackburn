@@ -68,7 +68,7 @@
   {{ range $.Site.Params.highlightjs_extra_languages }}
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{ . }}.min.js"></script>
   {{ end }}
-  <script>hljs.configure({languages: []})
+  <script>hljs.configure({languages: []});
   document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll('code').forEach((block) => {
       hljs.highlightBlock(block);
